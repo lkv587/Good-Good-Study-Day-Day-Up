@@ -1,10 +1,18 @@
 # -Java-
+
+#常用开发工具
+	1.idea https://www.cnblogs.com/iathanasy/p/9469280.html 永久激活
+	2.mysql (sqlyog)
+	3.git	
+	4.xshell
+	5.xmind
+	6.evething
+	7.google
+	8.postman
 Nothing is imporsibel,Just do it!	sekai ni itami o-sin la ten se		世界（せかい）に痛（いた）みを 神罗天征（しんらてんせい）
 我不是天生强大，而是天生要强！
 干柿鬼鲛：力量宇智波鼬：亲情迪达拉：艺术蝎：青春飞段：宗教角都：金钱小南：友情漩涡长门：和平绝：自由宇智波带土：爱情
-#账号密码 邮箱 Li@.2018  OA likang321`` 电脑 Lk@.2018  RTX：李康 pwd:123456
-zhangxiaoyu    Admin01!
-#葛朗台base test  123456
+
 # 常用Linux命令
 	ssh bus-coll.01.tomcat.prod.uc
 	-- logs
@@ -96,16 +104,14 @@ zhangxiaoyu    Admin01!
 	#logger
 	private Logger logger = LoggerFactory.getLogger(this.getClass());
 	
-#xmind 8pro序列号
-	XAka34A2rVRYJ4XBIU35UZPAUHF64CMMIYZCK2FZZUQNODIAOSPGFLFMSLIQMQUCUBXRENLK6NZL37JXP4PZXQFILMQ2RG5R7G4QNDO3PSOEUBOCDRYSSXZGRARV6MGA33TN2AMUBHEL4FXMWLAOSITHJUAV4BAYKBDCZQWVF3LWYXSDCXY546U3NBGOI3ZPAP2SO3CQIANDUODUO	
 #清缓存
 	cmd-->ipconfig/flushdns
 #MYSQL
-	如果你在使用MySQL或MariaDB，不要用“utf8”编码，改用“utf8mb4
+	如果你在使用MySQL或MariaDB，不要用“utf8”编码，改用“utf8mb4，主库GBK，其他UTF-8
 #http请求
 	JSONObject jstr = HttpClientUtil.getBusinessUrl(url,"post", map);
 	
-#异常处理
+#java异常处理
 /**
  * 业务受理失败异常
  */
