@@ -63,13 +63,13 @@
 	
 # Git git@192.168.1.206:root/mobanker-collection.git 	
 # idea 快捷键
-		ctrl+alt+s 设置
-		ctrl+shift+a  搜索
-		ctrl+alt+h 查找方法被哪些地方调用 alt+f7 也可以作用在变量上，列出某个类里，哪些地方使用了该变量
-		ctrl+shift+enter 表示为您收尾的意思
-		ctrl+shift+alt+n 使用symbol来查找
-		ctrl+z 撤销  ctrl+shift+z 反撤销
-		ctrl+z 打开最近文件
+	ctrl+alt+s 设置
+	ctrl+shift+a  搜索
+	ctrl+alt+h 查找方法被哪些地方调用 alt+f7 也可以作用在变量上，列出某个类里，哪些地方使用了该变量
+	ctrl+shift+enter 表示为您收尾的意思
+	ctrl+shift+alt+n 使用symbol来查找
+	ctrl+z 撤销  ctrl+shift+z 反撤销
+	ctrl+z 打开最近文件
 # Mybatis.xml	
 	<if test="userName!=null and userName != ''">
 		AND user_name LIKE "%"#{userName}"%"
@@ -129,13 +129,15 @@
 	JSONObject jstr = HttpClientUtil.getBusinessUrl(url,"post", map);
 	
 #java异常处理
+
 	/**
-	* 业务受理失败异常
-	*/
+	 * 业务受理失败异常
+	 */
 	public class ServiceException extends RuntimeException {
 	//接收reason参数用来描述业务失败原因.
 	public ServiceException(String reason) {  super(reason); }
 	}
+	
 	/**
 	* 修改用户信息
 	* @param user 要修改的用户数据
@@ -211,17 +213,16 @@
 	return !isEmpty(obj);
 	}
 
-# List<String> userIdList = Arrays.asList(cbi.getUserIds().split(","));
+* List<String> userIdList = Arrays.asList(cbi.getUserIds().split(","));
 	
-# redies命名 产线:服务:方法名
+* redies命名 产线:服务:方法名
 	
-# UUID.randomUUID().toString().trim().replaceAll("-","")	
+* UUID.randomUUID().toString().trim().replaceAll("-","")	
 
-# Idea 配置Git https://blog.csdn.net/u010348570/article/details/81204371?utm_source=blogxgwz0
+* Idea 配置Git https://blog.csdn.net/u010348570/article/details/81204371?utm_source=blogxgwz0
 	ssh-keygen -t rsa -C 'likang@mobanker.com'  
 
-# Raft算法动画演示地址
-http://thesecretlivesofdata.com/raft/
+* Raft算法动画演示地址 http://thesecretlivesofdata.com/raft/
 
 # Logger 日志
 	import org.slf4j.Logger;
