@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false">
+    <substitutionProperty name="log.base" value="./logs"/>
+    <!--LOG_HOME为日志保存的文件夹（必填、非空）,必须是/data/logs/路径,否则线上部署会报错-->
+    <property name="LOG_HOME" value="/data/logs/"/>
+    <property name="MOBANKER_LOG" value="root"/>
+    <property name="ACTIVEMQ_LOG" value="activeMQ"/>
+    <property name="RABBITMQ_LOG" value="rabbitMQ"/>
+    <!--SUFFIX配置为日志文件的后缀名(必填、不为空、能够区分其他日志)-->
+    <property name="SUFFIX" value=".Omitted.log"/>
+
+
+    <!-- 控制台输出 -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoding>UTF-8</encoding>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符 -->
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- 按照每天生成日志文件 -->
+    <appender name="OMITTEDFILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <encoding>UTF-8</encoding>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <!--日志文件输出的文件名 -->
+            <FileNamePattern>${LOG_HOME}/${fileAppName}/${MOBANKER_LOG}.%d{yyyy-MM-dd}.%i${SUFFIX}</FileNamePattern>
+            <!--日志文件保留天数 -->
+            <MaxHistory>7</MaxHistory>
+            <maxFileSize>100MB</maxFileSize>
+            <cleanHistoryOnStart>true</cleanHistoryOnStart>
+        </rollingPolicy>
+        <encoder class="com.mobanker.component.logagent.logback.pattern.MobankerFilePatternLayout">
+            <layout class="com.mobanker.component.logagent.logback.pattern.MobankerPatternLayoutForOmmit">
+                <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符 -->
+                <pattern>%id ${productLine} ${appName} %ip %timeStamp %thread %level</pattern>
+            </layout>
+        </encoder>
+    </appender>
+
+    <!-- 异步输出 -->
+    <appender name ="ASYNC_FILE" class= "ch.qos.logback.classic.AsyncAppender">
+        <!-- 更改默认的队列的深度,该值会影响性能.默认值为256 -->
+        <queueSize>512</queueSize>
+        <!-- 添加附加的appender,最多只能添加一个 -->
+        <appender-ref ref ="OMITTEDFILE"/>
+    </appender>
+
+    <!-- log输出kafka -->
+    <appender name="KAFKA" class="com.mobanker.component.logagent.logback.KafkaAppender">
+        <encoder class="com.mobanker.component.logagent.logback.encoding.LayoutKafkaMessageEncoder">
+            <layout class="com.mobanker.component.logagent.logback.pattern.MobankerPatternLayout">
+                <pattern>%id ${productLine} ${appName} %ip %timeStamp %thread %level</pattern>
+            </layout>
+        </encoder>
+        <topic>mobanker.log4j</topic>
+        <keyingStrategy class="com.mobanker.component.logagent.logback.keying.RoundRobinKeyingStrategy"/>
+        <deliveryStrategy class="com.mobanker.component.logagent.logback.delivery.AsynchronousDeliveryStrategy"/>
+        <appender-ref ref="ASYNC_FILE"/>
+    </appender>
+
+    <!-- spring -->
+    <logger name="org.springframework" additivity="true" level="DEBUG"/>
+    <!--myibatis log configure -->
+    <logger name="com.apache.ibatis" level="DEBUG"/>
+    <logger name="java.sql.Connection" level="DEBUG"/>
+    <logger name="java.sql.Statement" level="DEBUG"/>
+    <logger name="java.sql.PreparedStatement" level="DEBUG"/>
+    <logger name="org.apache.zookeeper" level="OFF"/>
+    <logger name="io.netty.handler.logging.LoggingHandler" level="OFF"/>
+    <logger name="org.apache.kafka.clients" level="OFF"/>
+    <logger name="org.apache.kafka.common" level="OFF"/>
+    <logger name="com.mobanker.sgpagent.trace.logger" level="DEBUG" additivity="false">
+        <appender-ref ref="KAFKA"/>
+    </logger>
+
+    <!-- 日志输出级别 ：测试环境为DEBUG级别，生产环境置为INFO级别-->
+    <root level="DEBUG">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="KAFKA"/>
+    </root>
+</configuration>
