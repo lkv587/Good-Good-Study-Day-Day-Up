@@ -222,4 +222,10 @@
 
 # Raft算法动画演示地址
 http://thesecretlivesofdata.com/raft/
+
+# Logger 日志
+	import org.slf4j.Logger;
+	import org.slf4j.LoggerFactory;
+	private Logger logger = LoggerFactory.getLogger(this.getClass());
+	
 	
