@@ -1,0 +1,216 @@
+
+# 常用开发工具
+	* idea https://www.cnblogs.com/iathanasy/p/9469280.html 永久激活
+	* mysql (sqlyog)  navicat
+	* git	tortortiesGit
+	* xshell 
+	* xmind
+	* evething
+	* google
+	* postman
+	* ftp  FlashFxp
+	* notepad++
+	* youdao
+	* clover
+	* mongo robo
+	* redis redisClient
+	* SSR	downloard:http://down.whsir.com/downloads/ssr-4.1.4-win.7z
+	...
+	
+# Linux 常用命令
+	ssh bus-coll.01.tomcat.prod.uc
+	-- logs
+	log_mobanker-collection-api
+	vi /opt/tomcat8/logs/catalina_ln.out
+	docker ps|grep business
+	docker exec -it convoy_jsystem_business /bin/bash
+	yum clean all
+	yum list|grep xxx
+	yum install xxx	
+	--tomcat
+	/etc/init.d/tomcat8/stop
+	/etc/init.d/tomcat8/start
+	--Netty restart
+	service mobanker-message-api restart
+	-- logs
+	tail -f /opt/tomcat7/logs/catalina_ln.out
+	cat jeewx-2015-09-20.log | grep 验证码
+	--查找
+	grep ‘pattern’ file: 在文件内搜索字符串比如：grep ’searchstring’ file.txt
+	cat file.txt: 输出文件内容到标准输出设备（屏幕）上
+	find /目录 . -name '文件名'
+	vi catalina_ln.out
+	/ sendMsg n
+	? sendMsg n
+	:wq 保存退出
+	:q! 强制退出
+	#H5服务启动
+	/etc/init.d/httpd start
+# 服务器
+	* 服务起搭建
+	https://blog.csdn.net/qq_41635167/article/details/81096075
+	* 内网穿透
+	https://blog.csdn.net/zhangguo5/article/details/77848658?utm_source=5ibc.net&utm_medium=referral
+	* Vagrant	
+	https://www.cnblogs.com/hafiz/p/9175484.html
+	
+# idea 快捷键
+	ctrl+alt+s 设置
+	ctrl+shift+a  搜索
+	ctrl+alt+h 查找方法被哪些地方调用 alt+f7 也可以作用在变量上，列出某个类里，哪些地方使用了该变量
+	ctrl+shift+enter 表示为您收尾的意思
+	ctrl+shift+alt+n 使用symbol来查找
+	ctrl+z 撤销  ctrl+shift+z 反撤销
+	ctrl+z 打开最近文件
+# Mybatis
+	* like
+	<if test="userName!=null and userName != ''">
+		AND user_name LIKE "%"#{userName}"%"
+	</if>
+	 and assign_areas like CONCAT('%','${assignAreas}','%' )
+	 merchant_name like concat (#{merchantName},'%')	
+	 *
+	<if test="beginAccount!=null">
+		<![CDATA[ and account>=#{beginAccount}]]>
+	</if>
+	<if test="afterOverdue!=null">
+		<if test="afterOverdue==1">
+			and late_days > 0
+		</if>
+		<if test="afterOverdue==0">
+			AND <![CDATA[ late_days <=0 ]]>
+		</if>
+	</if>
+	* foreach
+	<foreach collection="ids" item="item" open="(" close=")" separator=",">
+		#{item}
+	</foreach>
+
+# Java日期转换
+	* formart
+	Date d = new Date();  
+	SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");  
+	String dateNowStr = sdf.format(d);
+	* 30天后
+	Date now = new Date();
+	Calendar cal = Calendar.getInstance();
+	cal.setTime(now);
+	cal.add(java.util.Calendar.DAY_OF_MONTH, 30);
+	* 日期注解			
+	@JsonFormat(pattern = "yyyy-MM-dd hh:mm:ss")
+	* JAVA8
+	//时间戳
+	Instant timestamp = Instant.now();
+	* 当前日期
+	LocalDate now = LocalDate.now();
+	* 日期转换
+	LocalDateTime arrivalDate  = LocalDateTime.now();
+	DateTimeFormatter format = DateTimeFormatter.ofPattern("MMMdd yyyy  hh:mm a");
+    String landing = arrivalDate.format(format);
+	* Date转换为LocalDateTime 
+	public static LocalDateTime convertDateToLDT(Date date) {
+		return LocalDateTime.ofInstant(date.toInstant(), ZoneId.systemDefault()); 
+	}
+	* LocalDateTime转换为Date 
+	public static Date convertLDTToDate(LocalDateTime time) {	
+		return Date.from(time.atZone(ZoneId.systemDefault()).toInstant()); 	
+	}
+
+# String 处理
+	* use guava
+	String str = "1-2-3-4-5-6";
+	List<String> list = Splitter.on("-").splitToList(str);
+	* List<String> userIdList = Arrays.asList(cbi.getUserIds().split(","));
+	#转换
+	if (StringUtils.isNotEmpty(teamId)) {
+		teamIds = Arrays.asList(teamId.split(","));
+	}
+	//校验
+	if(!Strings.isNullOrEmpty(str))
+	* UUID
+	UUID.randomUUID().toString().trim().replaceAll("-","")
+	* 生成日期ID
+	String str = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
+	
+# JSON 转换
+	List<AssignCollector> assignCollectors = JSON.parseArray(overdueTaskBo.getAssignInfos(),AssignCollector.class);
+	//解成对象
+	Fromat mFromat = new Gson().fromJson(jsonStringObject, Fromat.class);
+	//解成对象组
+	LinkedList<Fromat> list = new LinkedList<MainActivity.Fromat>();
+	* FastJson
+	//解析成对象
+	Fromat fastjsonObject = JSON.parseObject(jsonObjectString, Fromat.class);
+	//解析成对象组
+	List<Fromat> fastjsonArray = JSON.parseArray(jsonArrayString, Fromat.class);
+	
+# 计算中间代码的运行时间
+	Stopwatch stopwatch = Stopwatch.createStarted();
+	for(int i=0; i<100000; i++){
+		// do some thing
+	}
+	long nanos = stopwatch.elapsed(TimeUnit.MILLISECONDS);
+	System.out.println(nanos);
+	//清缓存命令
+	cmd-->ipconfig/flushdns
+# MYSQL
+
+# Git
+	//上传GitHub
+　　git init //把这个目录变成Git可以管理的仓库
+　　git add README.md //文件添加到仓库
+　　git add . //不但可以跟单一文件，还可以跟通配符，更可以跟目录。一个点就把当前目录下所有未追踪的文件全部add了 
+　　git commit -m "first commit" //把文件提交到仓库
+　　git remote add origin git@github.com:wangjiax9/practice.git //关联远程仓库
+　　git push -u origin master //把本地库的所有内容推送到远程库上
+	
+# http请求
+	JSONObject jstr = HttpClientUtil.getBusinessUrl(url,"post", map);
+# java异常
+
+# 文件夹常用分类
+	视频	图片	文档	下载	音乐	游戏	软件
+# RGB颜色	
+	D9D919 金 	8650AC 	ADE55C	4B69FF	8847FF	D32CE6	E4AE39	CF6A32 	00FFFF	FF00FF	0000FF	0000FF	008989	FF0000
+# Logger 日志
+	* Logger
+	import org.slf4j.Logger;
+	import org.slf4j.LoggerFactory;
+	private Logger logger = LoggerFactory.getLogger(this.getClass());
+	* Color Console	
+	<property name="CONSOLE_LOG_PATTERN"
+              value="%blue([%d{HH:mm:ss.SSS}]) %contextName %magenta([%thread]) %yellow(%-5level) %cyan(%logger{36}) - %msg%n"/>
+	<appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder charset="UTF-8">
+            <pattern>${CONSOLE_LOG_PATTERN}</pattern>
+        </encoder>
+    </appender>	  
+	
+# docker命令
+	--检索
+	docker search 镜像名	eg:	docker search redis
+	--下载
+	docker pull 镜像名		eg：docker pull redis
+	--查看镜像列表
+	docker images
+	-- 删除镜像
+	docker rmi imge-id
+	--运行docker
+	docker run -name container-name -d image-name	eg：docker run -name test-redis -d redis
+	--查看运行中镜像列表
+	docker ps
+	--查看运行或停止镜像列表
+	docker ps -a
+	-- 停止容器
+	docker stop container-name/container-id		eg：docker stop test-redis
+	-- 启动容器
+	docker start container-name/container-id	eg:	docker start test-redis
+	-- 端口映射
+	docker run -d -p local-port:container-port --name port-redis redis
+	-- 删除容器
+	docker rm container-id
+	-- 查看日志
+	docker logs container-name/container-id		eg：docker logs port-redis
+	-- 登录容器
+	docker exec -it container-id/container-name bash	
+	
