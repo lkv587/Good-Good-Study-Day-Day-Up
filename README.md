@@ -54,7 +54,8 @@
 	* sharding
 
 # 分布式协调
-	[zookeeper](http://www.cnblogs.com/EasonJim/p/7481825.html)
+	[zookeeper](http://www.cnblogs.com/EasonJim/p/7481825.html "1")
+	[我的博客](http://blog.csdn.net/guodongxiaren "悬停显示")
 	
 # 大数据
 	* Hbase
