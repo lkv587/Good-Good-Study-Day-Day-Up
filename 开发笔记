@@ -118,8 +118,11 @@
 
 # String 处理
 	* use guava
-	String str = "1-2-3-4-5-6";
-	List<String> list = Splitter.on("-").splitToList(str);
+	String strs = "1-2-3-4-5-6";
+	//list转strs
+	String strs = list.stream().collect(Collectors.joining("-"));
+	//strs转list
+	List<String> list = Splitter.on("-").splitToList(strs);
 	* List<String> userIdList = Arrays.asList(cbi.getUserIds().split(","));
 	#转换
 	if (StringUtils.isNotEmpty(teamId)) {
