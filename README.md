@@ -54,7 +54,7 @@
 	* sharding
 
 ### 分布式协调
-	
+
 	[zookeeper](http://www.cnblogs.com/EasonJim/p/7481825.html)
 	
 ### 大数据
