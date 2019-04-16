@@ -106,7 +106,7 @@
 	* 日期转换
 	LocalDateTime arrivalDate  = LocalDateTime.now();
 	DateTimeFormatter format = DateTimeFormatter.ofPattern("MMMdd yyyy  hh:mm a");
-    String landing = arrivalDate.format(format);
+    	String landing = arrivalDate.format(format);
 	* Date转换为LocalDateTime 
 	public static LocalDateTime convertDateToLDT(Date date) {
 		return LocalDateTime.ofInstant(date.toInstant(), ZoneId.systemDefault()); 
@@ -132,8 +132,18 @@
 	if(!Strings.isNullOrEmpty(str))
 	* UUID
 	UUID.randomUUID().toString().trim().replaceAll("-","")
-	* 生成日期ID
-	String str = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
+	* 生成订单ID(日期+随机数)
+	public static String getCouponId(){
+	final byte[] lock = new byte[0];
+	final long w = 10000;
+	long r = 0;
+	synchronized (lock) {
+		r = (long) ((Math.random() + 1) * w);
+	}
+	return new SimpleDateFormat("yyyyMMddHHmmss").format(new Date()) + String.valueOf(r).substring(1);
+	}
+	* 手机号码Mark处理：139****3559
+	phone.substring(0,3)+"****"+phone.substring(7,phone.length())
 	
 # JSON 转换
 	List<AssignCollector> assignCollectors = JSON.parseArray(overdueTaskBo.getAssignInfos(),AssignCollector.class);
