@@ -1,9 +1,9 @@
 
 ### 内功
-	* TCP/IP
-	$ linux
-	- 算法
-	- 设计模式
+	*TCP/IP
+	$linux
+	_算法
+	-设计模式
 
 java基础
 	JVM
