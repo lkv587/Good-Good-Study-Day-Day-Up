@@ -1,8 +1,11 @@
 
-### 内功 :o: :+1:
+### 内功 :+1:
 - TCP/IP	
 - linux	
 - 算法	
+
+五分钟学算法 (https://mp.weixin.qq.com/s/vn3KiV-ez79FmbZ36SX9lg)
+
 - 设计模式 :+1:
 	
 ### java基础
