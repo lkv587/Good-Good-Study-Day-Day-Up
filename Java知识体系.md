@@ -3,9 +3,7 @@
 - TCP/IP	
 - linux	
 - 算法	
-
-五分钟学算法 (https://mp.weixin.qq.com/s/vn3KiV-ez79FmbZ36SX9lg)
-
+	[五分钟学算法](https://mp.weixin.qq.com/s/vn3KiV-ez79FmbZ36SX9lg) :+1:
 - 设计模式 :+1:
 	
 ### java基础
@@ -15,42 +13,42 @@
 * 多线程
 * 集合容器
 
-框架
-	Spring
-	spring boot
-	spring cloud
-	mybatis
+### 框架
+* Spring
+* spring boot
+* spring cloud
+* mybatis
 
-项目管理
-	maven
-	git
+### 项目管理
+* maven
+* git
 
-集成
-	Jekins
-数据库
-	mysql
-	redis
-	mongo
+### 集成
+* Jekins
+### 数据库
+* mysql
+* redis
+* mongo
 
-服务器	
-	apache
-	tomcat 
-	netty 
-	Nginx
+### 服务器	
+* Apache
+* Tomcat 
+* Netty 
+* Nginx
 
-中间件
+### 中间件
 
-消息
-	active mq
-	rbbitMq
-	kafka
-	rocketmq
-框架
-	dubbo
-缓存
-	redis
-	memcache
-	guava
+### 消息
+* active mq
+* rabbitMq
+* kafka
+* rocketmq
+### 框架
+* dubbo
+### 缓存
+* redis
+* memcache
+* guava
 
 搜索
 	elasticsearch
