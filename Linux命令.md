@@ -28,6 +28,8 @@
 * service xxx restart
 * netstat -tunlp
 * yum reinstall xxx
+* ps -ef|grep java
+* kill -9 1102(进程)
 
 ### 常用命令：
 #### ls 只列出文件名 （相当于dir，dir也可以使用）
