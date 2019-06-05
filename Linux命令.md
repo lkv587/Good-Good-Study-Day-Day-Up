@@ -1,48 +1,46 @@
-SecureCRT常用命令:
---1.
-docker ps|grep business
---2.
-docker exec -it convoy_jsystem_business /bin/bash
---3.查看tomcat运行日志
-tail -f /opt/tomcat7/logs/catalina_ln.out
---yum list 		package1 显示指定程序包安装情况package1
---yum install 	package1 安装指定的安装包package1
+### SecureCRT常用命令:
 
---3.查看tomcat运行日志
-tail -f /opt/tomcat7/logs/catalina_ln.out
--- call 
-curl http://192.168.1.105:40010/business_cl/api/1.0.0/collectionMsg/getMessageTemplateByNid?code=3a31bfe5c3cda1c01150649d551b1b71&nidType=1
--- post
-curl -d "code=3a31bfe5c3cda1c01150649d551b1b71&nidType=1" http://192.168.1.105:40010/business_cl/api/1.0.0/collectionMsg/getMessageTemplateByNid
---yum list 		package1 显示指定程序包安装情况package1
---yum install 	package1 安装指定的安装包package1
+* 查看容器 docker ps|grep XXX
 
-vi catalina_ln.out
-/ sendMsg n
-? sendMsg n
-:q! 退出vi
+* 进入容器 docker exec -it xxx /bin/bash
 
-./init.d/tomcat stop
-./init.d/tomcat start
--- Netty重启
-service mobanker-message-api restart
+#### 查看日志
 
-netstat -tunlp
+* tail -f /opt/tomcat7/logs/catalina_ln.out
 
-yum reinstall mobanker-message-api
+* yum list 		package1 显示指定程序包安装情况package1
+* yum install 	package1 安装指定的安装包package1
 
-常用命令：
-一、ls 只列出文件名 （相当于dir，dir也可以使用）
+#### curl
+* get
+    curl url+params
+* post
+    curl -d "params" url
+#### vi命令
+    vi catalina_ln.out
+* 向下搜索 / xxx n
+* 向上搜索 ? xxx n下一个
+* :q! 退出vi
+
+#### 服务启动/停止
+* ./init.d/tomcat stop
+* ./init.d/tomcat start
+* service xxx restart
+* netstat -tunlp
+* yum reinstall xxx
+
+### 常用命令：
+#### ls 只列出文件名 （相当于dir，dir也可以使用）
 -A:列出所有文件，包含隐藏文件。
 -l：列表形式，包含文件的绝大部分属性。
 -R：递归显示。
 --help：此命令的帮助。
-二、cd 改变目录
+#### cd 改变目录
 cd /:进入根目录
 cd ：回到自己的目录（用户不同则目录也不同，root为/root，xxt为/home/xxt
 cd ..：回到上级目录
 pwd：显示当前所在的目录
-三.less 文件名：查看文件内容。
+#### less 文件名：查看文件内容。
 四.q 退出打开的文件。
 五.上传文件： rz 选择要传送的文件，确定。
 六.下载文件： sz 指定文件名,enter敲，即下载到了secureCRT/download目录下。
