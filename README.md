@@ -1,8 +1,10 @@
-### 编程基础
-	* TCP/IP
-	* linux
-	* 算法
+### 基础
+	* 基本算法
 	* 设计模式
+	* 数据结构
+	* 数据库
+	* 操作系统
+	* 网络基础
 
 ### java基础
 	* JVM
@@ -10,12 +12,14 @@
 	* 并发
 	* 多线程
 	* 集合容器
-
-### 框架
 	* Spring
 	* spring boot
-	* spring cloud
 	* mybatis
+
+### 框架
+	* spring cloud
+	* dubbo
+	* service mesh 	(https://mp.weixin.qq.com/s/iSzQgsK4ANoCV0daIHMuNw)
 
 ### 项目管理
 	* maven
@@ -29,7 +33,6 @@
 	* mongo
 
 ### 服务器	
-	* apache
 	* tomcat 
 	* netty 
 	* Nginx
@@ -39,8 +42,7 @@
 	* rbbitMq
 	* kafka
 	* rocketmq
-### 框架
-	* dubbo
+
 ### 缓存
 	* redis
 	* memcache
@@ -54,9 +56,7 @@
 	* sharding
 
 ### 分布式协调
-
-	[Zookeeper](http://www.cnblogs.com/EasonJim/p/7481825.html)
-	
+	* zookeeper (http://www.cnblogs.com/EasonJim/p/7481825.html)
 ### 大数据
 	* Hbase
 	* spark
@@ -64,10 +64,10 @@
 	* Hive
 	* Flink
 	
-### 运维
-	* docker
+### 容器
 	* vagrant
-	* linux
+	* docker
+	* kubernetes http://docs.kubernetes.org.cn
 	
 ### 面试
 	* 剑指offer
