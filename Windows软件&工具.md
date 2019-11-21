@@ -12,6 +12,7 @@
 * 文本编辑 Sublime Notepad++
 * 程序卸载 Revo Uninstaller
 * 下载 fdm5(Free Download Manager 5)
+* Dsim++ http://www.chuyu.me/zh-Hans/index.html
 ### 开发软件
 * IDE idea
 * JDK
