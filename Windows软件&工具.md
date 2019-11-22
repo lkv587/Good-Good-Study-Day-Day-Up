@@ -26,7 +26,7 @@
 * TortoiseGit
 ### 工具类
 * 搜索 Everything or Listary
-* 梯子  SSR
+* Shadowsocks https://shadowsocks.org/en/download/clients.html
 * 系统雷达 radar
 * 系统  cpu-z
 * 图美化  Inpaint
