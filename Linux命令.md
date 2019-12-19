@@ -1,4 +1,4 @@
-### SecureCRT常用命令:
+### Linux常用命令:  https://blog.csdn.net/xulong_08/article/details/81463054
 
 * 查看容器 docker ps|grep XXX
 
