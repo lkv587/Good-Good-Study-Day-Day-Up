@@ -11,12 +11,20 @@ _斜体_
 `` 标记 ``
 
 + 列表1
-
-- 列表2
+  - 子列表
 
 > 引用内容
 
 表情一：:+1:  
 
 [表情大全](https://www.webfx.com/tools/emoji-cheat-sheet/)
+
+
+
+```
+
+let  a = 8;
+
+```
+
 
