@@ -56,7 +56,7 @@
 * sharding
 
 ### 分布式协调
-* [zookeeper] (http://www.cnblogs.com/EasonJim/p/7481825.html)
+* [zookeeper](http://www.cnblogs.com/EasonJim/p/7481825.html)
 ### 大数据
 * Hbase
 * spark
@@ -67,7 +67,7 @@
 ### 容器
 * vagrant
 * docker
-* [kubernetes] http://docs.kubernetes.org.cn
+* [kubernetes](http://docs.kubernetes.org.cn)
 
 ### 面试
 * 剑指offer
