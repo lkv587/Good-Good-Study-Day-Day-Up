@@ -21,7 +21,9 @@
 * dubbo
 * service mesh
   * [什么是Service Mesh？](https://mp.weixin.qq.com/s/iSzQgsK4ANoCV0daIHMuNw)
-
+### 架构
+* [一个可供中小团队参考的微服务架构技术栈](https://www.infoq.cn/article/china-microservice-technique/?utm_source=tuicool&utm_medium=referral)
+* [微服务架构技术栈选型手册](https://www.infoq.cn/article/micro-service-technology-stack/)
 ### 项目管理
 * maven
 * git
@@ -30,7 +32,9 @@
 * Jekins
 ### 数据库
 * mysql
+    * [数据库事务的特性、隔离级别、传播策略](https://www.cnblogs.com/z-sm/p/7245981.html)
 * redis
+    * [redis——相关问题汇总](https://blog.csdn.net/hebtu666/article/details/102580321)
 * mongo
 
 ### 服务器	
