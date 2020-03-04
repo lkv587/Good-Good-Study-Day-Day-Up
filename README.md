@@ -19,9 +19,9 @@
 ### 框架
 	* spring cloud
 	* dubbo
-	* service mesh (https://mp.weixin.qq.com/s/iSzQgsK4ANoCV0daIHMuNw)
+	* [service mesh](https://mp.weixin.qq.com/s/iSzQgsK4ANoCV0daIHMuNw)
+	[简书](http://jianshu.com)
 	
-
 ### 项目管理
 	* maven
 	* git
