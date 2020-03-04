@@ -19,7 +19,8 @@
 ### 框架
 * spring cloud
 * dubbo
-* [service mesh](https://mp.weixin.qq.com/s/iSzQgsK4ANoCV0daIHMuNw)
+* service mesh
+  * [什么是Service Mesh？](https://mp.weixin.qq.com/s/iSzQgsK4ANoCV0daIHMuNw)
 
 ### 项目管理
 * maven
@@ -56,7 +57,8 @@
 * sharding
 
 ### 分布式协调
-* [zookeeper](http://www.cnblogs.com/EasonJim/p/7481825.html)
+* zookeeper
+  * [zookeeper教程资源收集](http://www.cnblogs.com/EasonJim/p/7481825.html)
 ### 大数据
 * Hbase
 * spark
@@ -67,8 +69,8 @@
 ### 容器
 * vagrant
 * docker
-* [kubernetes](http://docs.kubernetes.org.cn)
-
+* kubernetes
+  * [kubernetes中文文档](http://docs.kubernetes.org.cn)
 ### 面试
 * 剑指offer
 
