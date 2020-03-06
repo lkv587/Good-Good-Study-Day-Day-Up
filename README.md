@@ -12,6 +12,7 @@
 * 并发
 * 多线程
 * 集合容器
+    * [Java集合总结](https://blog.csdn.net/ThinkWon/article/details/98844796)
 * Spring
 * spring boot
 * mybatis
