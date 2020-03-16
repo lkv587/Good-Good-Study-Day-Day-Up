@@ -1,6 +1,7 @@
 ### 基础
 * 基本算法
 * 设计模式
+  * [Java设计模式：23种设计模式全面解析](http://c.biancheng.net/design_pattern/)
 * 数据结构
 * 数据库
 * 操作系统
@@ -35,7 +36,7 @@
 * mysql
     * [数据库事务的特性、隔离级别、传播策略](https://www.cnblogs.com/z-sm/p/7245981.html)
 * redis
-    * [redis——相关问题汇总](https://blog.csdn.net/hebtu666/article/details/102580321)
+    * [redis—相关问题汇总](https://blog.csdn.net/hebtu666/article/details/102580321)
 * mongo
 
 ### 服务器	
