@@ -10,6 +10,7 @@
 ### java基础
 * JVM
 * IO
+    * [java序列化](https://www.cnblogs.com/9dragon/p/10901448.html)
 * 并发
 * 多线程
 * 集合容器
