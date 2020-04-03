@@ -38,6 +38,7 @@
     * [数据库事务的特性、隔离级别、传播策略](https://www.cnblogs.com/z-sm/p/7245981.html)
 * redis
     * [redis—相关问题汇总](https://blog.csdn.net/hebtu666/article/details/102580321)
+    * [redis性能优化](https://mp.weixin.qq.com/s/JVTtowoqsIixiaK8WL7wgQ)
 * mongo
 
 ### 服务器	
