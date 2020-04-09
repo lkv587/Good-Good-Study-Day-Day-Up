@@ -18,6 +18,7 @@
 * Spring
 * spring boot
 * mybatis
+    * [mybatis-plus](https://mp.baomidou.com/guide/)
 
 ### 框架
 * spring cloud
@@ -94,4 +95,8 @@
 * HttpClient
 * Javassist	
 
-
+### 工具&插件
+* IDEA 
+   * [Easy Code](https://gitee.com/makejava/EasyCode/wikis/pages?)
+   *  RestfulToolkit 接口查找 ctrl+\
+    
