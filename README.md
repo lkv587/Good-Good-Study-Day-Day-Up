@@ -36,6 +36,7 @@
 * Jekins
 ### 数据库
 * mysql
+    * [MySQL索引背后的数据结构及算法原理](http://blog.codinglabs.org/articles/theory-of-mysql-index.html)
     * [数据库事务的特性、隔离级别、传播策略](https://www.cnblogs.com/z-sm/p/7245981.html)
 * redis
     * [redis—相关问题汇总](https://blog.csdn.net/hebtu666/article/details/102580321)
