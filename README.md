@@ -62,13 +62,14 @@
 ### 搜索
 * elasticsearch
 
-### 分布式数据
+### 分布式
+* [高可用分布式系统](https://mp.weixin.qq.com/s/WOLQg5AbiPUCPhYz2Ixi2Q)
 * mycat
 * sharding
-
-### 分布式协调
-* zookeeper
-  * [zookeeper教程资源收集](http://www.cnblogs.com/EasonJim/p/7481825.html)
+* 分布式事务
+  * [TCC/2PC/3PC](https://mp.weixin.qq.com/s/08ixco06hMw99365vDiM0w)
+* 分布式协调
+    * [zookeeper教程资源收集](http://www.cnblogs.com/EasonJim/p/7481825.html)
 ### 大数据
 * Hbase
 * spark
