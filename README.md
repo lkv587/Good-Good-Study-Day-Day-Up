@@ -63,6 +63,7 @@
 * elasticsearch
 
 ### 分布式
+* [定时任务](https://mp.weixin.qq.com/s/l4vuYpNRjKxQRkRTDhyg2Q)
 * [高可用分布式系统](https://mp.weixin.qq.com/s/WOLQg5AbiPUCPhYz2Ixi2Q)
 * mycat
 * sharding
