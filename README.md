@@ -1,5 +1,6 @@
 ### 基础
 * 基本算法
+    * [十大经典算法](https://mp.weixin.qq.com/s/vn3KiV-ez79FmbZ36SX9lg)
 * 设计模式
   * [Java设计模式：23种设计模式全面解析](http://c.biancheng.net/design_pattern/)
 * 数据结构
