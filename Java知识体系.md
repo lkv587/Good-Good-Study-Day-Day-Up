@@ -1,7 +1,7 @@
 
-### 内功 :+1:
+### 底层 :+1:
 - TCP/IP	
-- linux	
+- 数据结构	
 - 算法	
 	[五分钟学算法](https://mp.weixin.qq.com/s/vn3KiV-ez79FmbZ36SX9lg) :+1:
 - 设计模式 :+1:
@@ -11,14 +11,15 @@
 * IO
 * 并发
 * 多线程
-* 集合容器
+* 容器集合
 
 ### 框架
 * Spring
-* spring boot
-* spring cloud
-* mybatis
-
+* Spring MVC
+* Spring Boot
+* Spring Cloud
+* MyBatis
+* Spring Cloud Alibaba
 ### 项目管理
 * maven
 * git
@@ -26,64 +27,68 @@
 ### 集成
 * Jekins
 ### 数据库
-* mysql
-* redis
-* mongo
+* MySQL
+* Redis
+* MongoDB
 
 ### 服务器	
-* Apache
 * Tomcat 
 * Netty 
-* Nginx
 
 ### 中间件
+* Nginx
+* Zookepper
 
-### 消息
-* active mq
-* rabbitMq
-* kafka
-* rocketmq
+### MQ
+* ActiveMQ
+* RabbitMQ
+* Kafka
+* RocketMQ
 ### 框架
-* dubbo
+* RPC
+* Dubbo
 ### 缓存
 * redis
 * memcache
 * guava
 
 ### 搜索
-	elasticsearch
+* Lucene
+* ElasticSearch
 	
-### 分布式数据
-	mycat
-	sharding
+### 分布式
+* 分布式事务
+* 分布式数据库
+** mycat
+** sharding
+* 分布式协调
+* 分布式任务调度
+** xxl-job [快速入门](https://www.jianshu.com/p/fa7186bea84b)
 
-### 分布式协调
-	zookeeper
-	
 ### 大数据
-	Hbase
-	spark
-	hadoop
-	Hive
-	Flink
+* Hbase
+* Spark
+* Hadoop
+* Hive
+* Flink
 	
 ### 运维
-	docker
-	vagrant
-	linux
-	
+* Linux
+* Docker
+* K8S
 ### 面试
-	剑指offer
-	
-### 常用三方工具包
-	Guava
-	fastJson
-	log4J
-	commons-codec
-	commons-lang3
-	commons-io
-	Quartz
-	HttpClient
-	Javassist	
+* Java面试手册
+### 工具
+* Lombook
+* Guava
+* fastJson
+* log4J
+* logback
+* commons-codec
+* commons-lang3
+* commons-io
+* Quartz 任务调度
+* HttpClient
+* Javassist	
 	
 	
