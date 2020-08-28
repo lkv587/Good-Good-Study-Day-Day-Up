@@ -1,6 +1,7 @@
 ### 基础
 * 基本算法
-    * [十大经典算法](https://mp.weixin.qq.com/s/vn3KiV-ez79FmbZ36SX9lg)
+   * [五分钟学算法](https://mp.weixin.qq.com/s/vn3KiV-ez79FmbZ36SX9lg)
+   * [十大经典算法](https://mp.weixin.qq.com/s/vn3KiV-ez79FmbZ36SX9lg)
 * 设计模式
   * [Java设计模式：23种设计模式全面解析](http://c.biancheng.net/design_pattern/)
 * 数据结构
@@ -25,7 +26,9 @@
 ### 框架
 * Spring Cloud
 * Spring Cloud Alibaba
-* Dubbo
+* RPC
+   * [RPC框架简介](https://developer.51cto.com/art/201906/597963.htm)
+   * Dubbo
 * Service Mesh
   * [什么是Service Mesh？](https://mp.weixin.qq.com/s/iSzQgsK4ANoCV0daIHMuNw)
 ### 架构
@@ -73,7 +76,7 @@
 * Sharding
 * 分布式事务
   * [TCC/2PC/3PC](https://mp.weixin.qq.com/s/08ixco06hMw99365vDiM0w)
-* 分布式协调
+* xxl-job [快速入门](https://www.jianshu.com/p/fa7186bea84b)
 * Zookeeper
     * [zookeeper教程资源收集](http://www.cnblogs.com/EasonJim/p/7481825.html)
 ### 大数据
@@ -83,7 +86,8 @@
 * Hive
 * Flink
 
-### 容器
+### 运维
+* Linux
 * Vagrant
 * Docker
 * Kubernetes
