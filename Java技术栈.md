@@ -1,3 +1,5 @@
+参考：[必看！java后端，亮剑诛仙（最全知识点](https://mp.weixin.qq.com/s/Cuv0SyjzasDKC0wIQxrgaw)
+
 ### 基础
 * 基本算法
    * [五分钟学算法](https://mp.weixin.qq.com/s/vn3KiV-ez79FmbZ36SX9lg)
@@ -11,12 +13,16 @@
 
 ### java基础
 * JVM
-* IO
+* NIO
     * [java序列化](https://www.cnblogs.com/9dragon/p/10901448.html)
 * 并发
 * 多线程
 * 集合容器
     * [Java集合总结](https://blog.csdn.net/ThinkWon/article/details/98844796)
+* 反射
+* 文件操作
+* Lambda
+* Stream
 * Spring
 * SpringMVC
 * Spring Boot
@@ -37,8 +43,6 @@
 ### 项目管理
 * Maven
 * Git
-
-### 集成
 * Jekins
 ### 数据库
 * MySQL
@@ -59,9 +63,11 @@
 * RabbitMQ
 * Kafka
 * RocketMQ
+* MQTT
 
 ### 缓存
 * Redis
+    * [中文文档](http://www.redis.cn/documentation.html)
 * Memcache
 * Guava
 
@@ -98,6 +104,7 @@
 * Java面试手册
 
 ### 常用三方工具包
+* Hutool [文档](https://www.hutool.cn/docs/#/)
 * Guava
 * fastJson
 * log4J
