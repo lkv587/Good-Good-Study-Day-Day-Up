@@ -28,3 +28,4 @@ let  a = 8;
 ```
 > **不谋万世者，不足谋一时；不谋全局者，不足谋一域**
 
+参考：[Markdown从入门到精通](https://www.52pojie.cn/thread-1286100-1-1.html)
