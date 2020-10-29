@@ -3,7 +3,7 @@
 * 镜像ISO [MSDN i tell you](https://msdn.itellyou.cn/)
 * [万能网卡驱动](http://www.360.cn/qudongdashi/index.html?src=tab)
 * 硬件测试工具
-  * cpu-z
+  * CPU-Z
   * 显卡超频[MSI afterburner](http://download-cn.msi.com/uti_exe/vga/MSIAfterburnerSetup.zip)
   * CPU超频 [AMD Ryzen Master](https://www.amd.com/zh-hans/technologies/ryzen-master)
   * [Aida64绿色版](http://cr2.197946.com/aida64extreme_build_5157_xbnj9z3mdy.zip)
@@ -16,7 +16,8 @@
   * bandizip  
   * 7-zip
 * 视频播放器 
-  * potplayer 
+  * potplayer
+  * ZY Player githup
 * 桌面美化  
   * Rainmeter  
   * WallpaperEngine
@@ -31,7 +32,15 @@
   * fdm5(Free Download Manager 5)
 * 看图神器 [Honeyview](http://www.bandisoft.com/honeyview/)
 ### 开发软件
-* IDE idea
+* IDEA常用插件
+    * Alibaba Java Coding Guidelines
+    * Alibaba Cloud Toolkit 
+    * CodeGlance
+    * Codota
+    * Lombok
+    * MavenHelper
+    * MybatisPlugin
+    * Transcation
 * JDK
 * MySql 
   * Navicat 
@@ -54,10 +63,9 @@
 * 搜索 
   * Everything 
   * Listary
+  * [Quicker](https://www.getquicker.net/)
+  * Wox(https://github.com/Wox-launcher/Wox/releases)
 * [Shadowsocks](https://shadowsocks.org/en/download/clients.html)
-* 图美化  Inpaint
-* 截图  Snipast
-* 任务栏透明 TranslucentTB
 * Chrome插件 油猴,沙拉查词
 * [Utools](https://u.tools/)
 
