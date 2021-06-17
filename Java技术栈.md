@@ -1,13 +1,12 @@
 参考：[必看！java后端，亮剑诛仙（最全知识点](https://mp.weixin.qq.com/s/Cuv0SyjzasDKC0wIQxrgaw)
 
-### 基础
+### 计算机基础
 * 基本算法
    * [五分钟学算法](https://mp.weixin.qq.com/s/vn3KiV-ez79FmbZ36SX9lg)
    * [十大经典算法](https://mp.weixin.qq.com/s/vn3KiV-ez79FmbZ36SX9lg)
 * 设计模式
   * [Java设计模式：23种设计模式全面解析](http://c.biancheng.net/design_pattern/)
 * 数据结构
-* 数据库
 * 操作系统
 * 网络基础
 
@@ -17,19 +16,19 @@
     * [java序列化](https://www.cnblogs.com/9dragon/p/10901448.html)
 * 并发
 * 多线程
-* 集合容器
+* 集合
     * [Java集合总结](https://blog.csdn.net/ThinkWon/article/details/98844796)
 * 反射
 * 文件操作
 * Lambda
 * Stream
+
+### 框架
 * Spring
 * SpringMVC
 * Spring Boot
 * Mybatis
     * [Mybatis-plus](https://mp.baomidou.com/guide/)
-
-### 框架
 * Spring Cloud
 * Spring Cloud Alibaba
 * RPC
@@ -59,7 +58,6 @@
 * Nginx
 
 ### 消息中间件
-* ActiveMQ
 * RabbitMQ
 * Kafka
 * RocketMQ
@@ -124,4 +122,8 @@
    * Alibaba Cloud Toolkit
    * Alibaba Java Coding Guidelines
    * Maven Helper
+* postman 
+* xshell
+* navicat sqlyog
+* jmeter 压测
     
