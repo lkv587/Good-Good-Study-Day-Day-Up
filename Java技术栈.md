@@ -1,14 +1,15 @@
 参考：[必看！java后端，亮剑诛仙（最全知识点](https://mp.weixin.qq.com/s/Cuv0SyjzasDKC0wIQxrgaw)
 
 ### 计算机基础
-* 基本算法
+* 计算机组成原理
+* 操作系统
+* 数据结构与算法
    * [五分钟学算法](https://mp.weixin.qq.com/s/vn3KiV-ez79FmbZ36SX9lg)
    * [十大经典算法](https://mp.weixin.qq.com/s/vn3KiV-ez79FmbZ36SX9lg)
+* 计算机网络
+* 编译原理
 * 设计模式
   * [Java设计模式：23种设计模式全面解析](http://c.biancheng.net/design_pattern/)
-* 数据结构
-* 操作系统
-* 网络基础
 
 ### java基础
 * JVM
@@ -22,6 +23,7 @@
 * 文件操作
 * Lambda
 * Stream
+* jdk源码
 
 ### 框架
 * Spring
@@ -103,6 +105,7 @@
 
 ### 常用三方工具包
 * Hutool [文档](https://www.hutool.cn/docs/#/)
+* Easy excel
 * Guava
 * fastJson
 * log4J
